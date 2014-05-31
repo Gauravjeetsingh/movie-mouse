@@ -1,11 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin+Sketch);
 
-.effect-div{
-	background:url('../assets/canvas.png') no-repeat top center;
+.effect-div > img{
 	width:80px;
 	height: 80px;
 	margin: 10px 10px;
 	border-radius:40px;
+}
+
+.effect-div > p{
+	text-align: center;
+	font-family: Schoolbell;
+	color:#f9cf00;
 }
 
 .effects-wrapper{
@@ -13,11 +18,11 @@
 }
 
 .canvas{
-	margin-top: 80px;
+	margin-top: 100px;
 }
 
 .canvas > img{
-	width: inherit;
+	width: 90%;
 	height: auto;
 	margin: auto;
 	display: block;
@@ -29,15 +34,16 @@
 	width: 25%;
 	min-width: 270px;
 	float: right;
-	margin-top:50px;
+	margin-top:35px;
+	margin-right:5%;
 }
 
 .column-1{
-	float: right;
+	float: left;
 }
 
 .column-2{
-	float: left;
+	float: right;
 }
 
 .previous, .next{
