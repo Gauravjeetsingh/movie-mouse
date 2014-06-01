@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Photo Editor</title>
+
     <link rel="stylesheet" href="css/simplegrid.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/effects.css">	
+    <link rel="stylesheet" href="css/effects.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src-"js/jquery-ui.js"></script>
 </head>
 <body>
 <div class="grid wrapper effects-wrapper">
@@ -31,16 +35,84 @@
 	 </div> <!-- End of canvas div -->
       </div><!-- End of col-8-12 div-->
 
-       <div class="effects-sidebar">
+
+
+<!--SLIDER STARTS HERE -->
+<div class="slider" id="slider">
+   <div class="holder">
+      <div class="slide" id="slide-0">
+
+           <div class="sidebar" id="sticker-sidebar">
+
+	        <div class="stickers-menu">
+
+	            <div class="previous slider-nav">
+	             <a href="#slide-0">&lt;</a>
+                    </div>
+	            <h3 class="subheadings"> stickers </h3>
+  		    <div class="next slider-nav">
+		      <a href="#slide-1">&gt;</a>
+		    </div>
+
+                </div> <!-- End of stickers-menu div-->
+
+                <div class="stickers">   <!-- Click Photo -->
+
+   	       <div class="column-1">
+                  <div class="sticker-div" >
+		 	 <img src="assets/sticker1.png"> 
+			 <p>sticker</p>
+                  </div>
+
+                  <div class="sticker-div" >
+			<img src="assets/sticker1.png">
+			<p>Sticker</p>
+                  </div>
+
+
+                  <div class="sticker-div" >
+			<img src="assets/sticker1.png">
+			<p>sticker</p>
+                  </div>
+	       </div> <!-- End of column-1 div-->
+
+	       <div class="column-2">
+	 	  <div class="sticker-div" >
+			<img src="assets/sticker1.png">
+			<p>sticker</p>
+                  </div>
+
+
+                  <div class="sticker-div" >
+			<img src="assets/sticker1.png">
+			<p>sticker</p>
+                  </div>
+
+
+                  <div class="sticker-div" >
+			<img src="assets/sticker1.png">
+			<p>sticker</p>
+                  </div>
+	     </div> <!-- End of column-2 div-->
+
+            </div> <!-- End of stickers div -->
+
+
+	</div><!-- End of sidebar div -->
+     </div><!-- End of slide 0-->
+
+     <div class="slide" id="slide-1">
+
+       <div class="sidebar" id="effects-sidebar">
 
 	<div class="effects-menu">
 
-	<div class="previous">
-	<
+	<div class="previous slider-nav">
+		      <a href="#slide-0">&lt;</a>
 	</div>
            <h3 class="subheadings"> effects </h3>
-	<div class="next">
-	>
+	<div class="next slider-nav">
+		      <a href="#slide-1">&gt;</a>
 	</div>
 
 	</div> <!-- End of effects-menu div-->
@@ -87,7 +159,12 @@
         </div> <!-- End of effects div -->
 
 
-	</div><!-- End of effects-sidebar div -->
+	</div><!-- End of sidebar -->
+      </div><!--End of slide 1-->
+
+   </div><!-- End of holder-->
+</div><!--End of slider-->
+
 </div> <!--End of canvas-overlay div-->	
 </div> <!-- End of effects-wrapper div-->
 
@@ -97,6 +174,9 @@
 	</footer>
         <!-- Footer div -->
 </div>
+
+<script src="js/slider.js">
+</script>
 	
 </body>
 </html>

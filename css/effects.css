@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin+Sketch);
 
-.effect-div > img{
+.effect-div > img, .sticker-div > img{
 	width:80px;
 	height: 80px;
 	margin: 10px 10px;
 	border-radius:40px;
 }
 
-.effect-div > p{
+.effect-div > p, .sticker-div > p{
 	text-align: center;
 	font-family: Schoolbell;
 	color:#f9cf00;
@@ -30,7 +30,7 @@
 	border:10px #5e5e5e solid;
 }
 
-.effects-sidebar{
+.sidebar{
 	width: 25%;
 	min-width: 270px;
 	float: right;
@@ -46,10 +46,12 @@
 	float: right;
 }
 
-.previous, .next{
+.previous > a, .next > a{
+	text-decoration:none;
 	font-size:72px;
 	font-family: 'Cabin Sketch', cursive;
 	color:#ffda24;
+	cursor: pointer;
 }
 
 .previous{
@@ -62,6 +64,21 @@
 	margin-top:30%;
 }
 
-.effects-menu{
+.effects-menu, .stickers-menu{
 	width: 270px;
+}
+
+.slider {
+  width: 300px;
+
+  overflow-x: hidden;
+}
+.slide {
+  float: left;
+  width: 300px;
+
+}
+
+.holder {
+  width: 300%;
 }
